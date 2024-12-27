@@ -34,7 +34,7 @@ text |>
             text = colDef(
                 name = "Sentence",
                 class = "medium",
-                minWidth = 350,
+                minWidth = 300,
                 maxWidth = 650
             ),
             order_original = colDef(
