@@ -1,0 +1,100 @@
+---
+title: "Moby Dick - Ordered"
+format:
+ html:
+  mainfont: Newsreader
+  theme:
+   - styles.scss
+---
+
+
+```{r}
+#| include: false
+library(reactable)
+```
+
+
+```{r}
+#| include: false
+text <- readRDS("data/text-clean.Rds")
+```
+
+
+```{r}
+#| echo: false
+#| column: page
+
+text |> 
+    reactable(
+        searchable = FALSE,
+        filterable = FALSE,
+        pagination = FALSE,
+        defaultSorted = "order_original",
+        columns = list(
+            text = colDef(
+                name = "Sentence",
+                class = "medium",
+                minWidth = 600
+            ),
+            order_original = colDef(
+                name = "Original Order",
+                class = "smol"
+            ),
+            order_n_characters = colDef(
+                name = "Number of Characters",
+                class = "smol"
+            ),
+            order_abc = colDef(
+                name = "ABC Order",
+                class = "smol"
+            )
+        ),
+        theme = reactableTheme(
+            backgroundColor = "#f2e9df",
+            borderColor = "#f2e9df",
+            headerStyle = list(backgroundColor = "#e5d8cb"),
+
+        )
+    )
+```
+
+<br>
+
+---
+
+<br>
+
+This page was created by [Jeremy Allen](https://bsky.app/profile/jeremy-data.bsky.social). John Harmon's *[gutnbergr](https://docs.ropensci.org/gutenbergr/)* R package was used to retrieve the text from [Project Gutenberg](https://www.gutenberg.org/). Text processing was done with *[tidyverse](https://www.tidyverse.org/)* packages and the *[tidytext](https://juliasilge.github.io/tidytext/)* package by Julia Silge and David Robinson. This page was built with Posit's [Quarto](https://quarto.org/) framework and *[reactable](https://glin.github.io/reactable/index.html)* package. This page is hosted on a [Posit Connect](https://posit.co/products/enterprise/connect/) server.
+
+**Project Gutenberg book information:**
+
+The Project Gutenberg eBook of Moby-Dick; or, The Whale
+    
+This ebook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this ebook or online
+at www.gutenberg.org. If you are not located in the United States,
+you will have to check the laws of the country where you are located
+before using this eBook.
+
+Title: Moby-Dick; or, The Whale
+
+Author: Herman Melville
+
+Release date: May 1, 1991 [eBook #15]
+                Most recently updated: March 6, 2024
+
+Language: English
+
+Credits: Eugene F. Irey
+
+### References
+
+Harmon J, Johnston M, Bradford J, Robinson D (2024). *gutenbergr: Download and Process Public Domain Works from Project Gutenberg.* R package version 0.2.4.9000, [https://github.com/ropensci/gutenbergr](https://github.com/ropensci/gutenbergr), [https://docs.ropensci.org/gutenbergr/](https://docs.ropensci.org/gutenbergr/).  
+
+Lin G (2024). *reactable: Interactive Data Tables for R*. R package version 0.4.4.9000, https://github.com/glin/reactable, [https://glin.github.io/reactable/](https://glin.github.io/reactable/).  
+
+Silge J, Robinson D (2016). “tidytext: Text Mining and Analysis Using Tidy Data Principles in R.” *JOSS*, 1(3). doi:10.21105/joss.00037, [http://dx.doi.org/10.21105/joss.00037](https://doi.org/10.21105/joss.00037).
+
+Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V, Takahashi K, Vaughan D, Wilke C, Woo K, Yutani H (2019). “Welcome to the tidyverse.” *Journal of Open Source Software*, 4(43), 1686. [doi:10.21105/joss.01686](https://doi.org/10.21105/joss.01686).  
