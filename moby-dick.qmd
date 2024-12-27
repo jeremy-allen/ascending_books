@@ -34,19 +34,24 @@ text |>
             text = colDef(
                 name = "Sentence",
                 class = "medium",
-                minWidth = 600
+                minWidth = 350,
+                maxWidth = 650
             ),
             order_original = colDef(
                 name = "Original Order",
-                class = "smol"
+                class = "smol",
+                maxWidth = 100
             ),
             order_n_characters = colDef(
                 name = "Number of Characters",
-                class = "smol"
+                class = "smol",
+                maxWidth = 150,
+                minWidth = 100,
             ),
             order_abc = colDef(
                 name = "ABC Order",
-                class = "smol"
+                class = "smol",
+                maxWidth = 100
             )
         ),
         theme = reactableTheme(
