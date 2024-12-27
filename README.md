@@ -10,7 +10,9 @@ Dwight mentioned wanting to see Moby Dick in a format that allows reordering sen
 
 ### Moby Dick - Ordered
 
-at [https://pub.current.posit.team/public/moby/](https://pub.current.posit.team/public/moby/).
+At [https://pub.current.posit.team/public/moby/](https://pub.current.posit.team/public/moby/). Click a column header to reorder.
+
+![](https://github.com/jeremy-allen/ascending_books/blob/d87f938b33965ce8f2b263cb08a2f3a496793757/moby-dick.png)
 
 ## How I did it
 
