@@ -64,7 +64,7 @@ text |>
 
 <br>
 
-This page was created by [Jeremy Allen](https://bsky.app/profile/jeremy-data.bsky.social). John Harmon's *[gutnbergr](https://docs.ropensci.org/gutenbergr/)* R package was used to retrieve the text from [Project Gutenberg](https://www.gutenberg.org/). Text processing was done with *[tidyverse](https://www.tidyverse.org/)* packages and the *[tidytext](https://juliasilge.github.io/tidytext/)* package by Julia Silge and David Robinson. This page was built with Posit's [Quarto](https://quarto.org/) framework and *[reactable](https://glin.github.io/reactable/index.html)* package. This page is hosted on a [Posit Connect](https://posit.co/products/enterprise/connect/) server.
+This page was created by [Jeremy Allen](https://bsky.app/profile/jeremy-data.bsky.social). [The code is available here](https://github.com/jeremy-allen/ascending_books). John Harmon's *[gutnbergr](https://docs.ropensci.org/gutenbergr/)* R package was used to retrieve the text from [Project Gutenberg](https://www.gutenberg.org/). Text processing was done with *[tidyverse](https://www.tidyverse.org/)* packages and the *[tidytext](https://juliasilge.github.io/tidytext/)* package by Julia Silge and David Robinson. This page was built with Posit's [Quarto](https://quarto.org/) framework and *[reactable](https://glin.github.io/reactable/index.html)* package. This page is hosted on a [Posit Connect](https://posit.co/products/enterprise/connect/) server.
 
 **Project Gutenberg book information:**
 
