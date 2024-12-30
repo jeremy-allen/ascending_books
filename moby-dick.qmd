@@ -9,7 +9,13 @@ format:
 
 <br>
 
-Click "ABC Order" or another column header to sort ascending. Click it again for descending. Clicking "Original Order" will reset everything.  
+Click "ABC Order" or another column header to sort sentences in a new order. Click it again for descending. Clicking "Original Order" will reset everything.  
+
+::: {.callout-tip title="Why?" collapse="true"}
+Dwight Garner of The New York Times and Becca Rothfeld of The Washington Post discussed their 2024 book reviews with Kara Swisher on [an episode of Kara's podcast, On with Kara Swisher](https://podcasts.apple.com/us/podcast/the-best-and-most-overrated-books-of-2024/id1643307527?i=1000681397924).
+
+Dwight noted that reading sentences out of context lets you focus on the writer's skill at the level of sentences. 
+:::
 
 ```{r}
 #| include: false
