@@ -7,9 +7,11 @@ format:
    - styles.scss
 ---
 
-<br>
+::: {.panel-tabset} 
 
-Click "ABC Order" or another column header to sort sentences in a new order. Click it again for descending. Clicking "Original Order" will reset everything.  
+## Book
+
+Every sentence is its own row. Click "ABC Order" or another column header to sort sentences in a new order. Click it again for descending. Clicking "Original Order" will reset everything.  
 
 ::: {.callout-tip title="Why?" collapse="true"}
 Dwight Garner of The New York Times and Becca Rothfeld of The Washington Post discussed their 2024 book reviews with Kara Swisher on [an episode of Kara's podcast, On with Kara Swisher](https://podcasts.apple.com/us/podcast/the-best-and-most-overrated-books-of-2024/id1643307527?i=1000681397924).
@@ -76,9 +78,7 @@ text |>
     )
 ```
 
-<br>
-
----
+## About
 
 <br>
 
@@ -116,3 +116,5 @@ Lin G (2024). *reactable: Interactive Data Tables for R*. R package version 0.4.
 Silge J, Robinson D (2016). “tidytext: Text Mining and Analysis Using Tidy Data Principles in R.” *JOSS*, 1(3). doi:10.21105/joss.00037, [http://dx.doi.org/10.21105/joss.00037](https://doi.org/10.21105/joss.00037).
 
 Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V, Takahashi K, Vaughan D, Wilke C, Woo K, Yutani H (2019). “Welcome to the tidyverse.” *Journal of Open Source Software*, 4(43), 1686. [doi:10.21105/joss.01686](https://doi.org/10.21105/joss.01686).  
+
+:::

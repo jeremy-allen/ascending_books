@@ -9,6 +9,7 @@ $h3-font-size: 1.4rem !default;
 
 body {
     background-color: #f2e9df;
+    color: #646464;
 }
 
 .smol {
@@ -31,3 +32,11 @@ div.callout-header.d-flex.align-content-center {
 div.callout-tip.callout {
     border-left-color: #ffffff;
   }
+
+a, .nav-link, .nav-link:hover {
+    color: #2a1100;
+}
+
+.nav-link-active {
+    color: #000000;
+}
