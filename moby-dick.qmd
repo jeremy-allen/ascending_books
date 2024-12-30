@@ -9,7 +9,7 @@ format:
 
 <br>
 
-Click "ABC Order" or another column header to sort. Clicking "Original Order" will reset everything.  
+Click "ABC Order" or another column header to sort ascending. Click it again for descending. Clicking "Original Order" will reset everything.  
 
 ```{r}
 #| include: false
