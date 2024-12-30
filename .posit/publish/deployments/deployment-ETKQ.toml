@@ -10,9 +10,9 @@ id = '110de8e9-684f-4d1c-ad85-eb946d4411b2'
 dashboard_url = 'https://pub.current.posit.team/connect/#/apps/110de8e9-684f-4d1c-ad85-eb946d4411b2'
 direct_url = 'https://pub.current.posit.team/content/110de8e9-684f-4d1c-ad85-eb946d4411b2/'
 logs_url = 'https://pub.current.posit.team/connect/#/apps/110de8e9-684f-4d1c-ad85-eb946d4411b2/logs'
-deployed_at = '2024-12-30T11:27:34-05:00'
-bundle_id = '1579'
-bundle_url = 'https://pub.current.posit.team/__api__/v1/content/110de8e9-684f-4d1c-ad85-eb946d4411b2/bundles/1579/download'
+deployed_at = '2024-12-30T15:37:27-05:00'
+bundle_id = '1584'
+bundle_url = 'https://pub.current.posit.team/__api__/v1/content/110de8e9-684f-4d1c-ad85-eb946d4411b2/bundles/1584/download'
 files = [
   '.posit/publish/Moby Dick - Ordered-A4I2.toml',
   '.posit/publish/deployments/deployment-ETKQ.toml',
