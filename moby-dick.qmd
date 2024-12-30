@@ -57,6 +57,10 @@ text |>
                 maxWidth = 100
             )
         ),
+        columnGroups = list(
+          colGroup(name = "Sort with these columns",
+          columns = c("order_original", "order_abc", "order_n_characters"))
+        ),
         theme = reactableTheme(
             backgroundColor = "#f2e9df",
             borderColor = "#f2e9df",

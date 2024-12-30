@@ -10,22 +10,30 @@ id = '110de8e9-684f-4d1c-ad85-eb946d4411b2'
 dashboard_url = 'https://pub.current.posit.team/connect/#/apps/110de8e9-684f-4d1c-ad85-eb946d4411b2'
 direct_url = 'https://pub.current.posit.team/content/110de8e9-684f-4d1c-ad85-eb946d4411b2/'
 logs_url = 'https://pub.current.posit.team/connect/#/apps/110de8e9-684f-4d1c-ad85-eb946d4411b2/logs'
-deployed_at = '2024-12-29T19:14:04-05:00'
-bundle_id = '1569'
-bundle_url = 'https://pub.current.posit.team/__api__/v1/content/110de8e9-684f-4d1c-ad85-eb946d4411b2/bundles/1569/download'
+deployed_at = '2024-12-29T19:49:09-05:00'
+bundle_id = '1570'
+bundle_url = 'https://pub.current.posit.team/__api__/v1/content/110de8e9-684f-4d1c-ad85-eb946d4411b2/bundles/1570/download'
 files = [
   '.posit/publish/Moby Dick - Ordered-A4I2.toml',
   '.posit/publish/deployments/deployment-ETKQ.toml',
   'moby-dick.html',
   'moby-dick_files/libs/bootstrap/bootstrap-1794dfc47caf39713b00b9dc41b04d8c.min.css',
+  'moby-dick_files/libs/bootstrap/bootstrap-1b1dffb1b401cf89e438281a79221235.min.css',
   'moby-dick_files/libs/bootstrap/bootstrap-1b7f5102f1d9e22b68aa3f81858a3168.min.css',
+  'moby-dick_files/libs/bootstrap/bootstrap-210171794a7a58dee807f71352113267.min.css',
+  'moby-dick_files/libs/bootstrap/bootstrap-318ccb8949bc4624c038a496c7b63e84.min.css',
+  'moby-dick_files/libs/bootstrap/bootstrap-3dbb04f7893faa886dd35df1a9ef8c81.min.css',
   'moby-dick_files/libs/bootstrap/bootstrap-42725cd66569b1520be3fb405e7bbc2b.min.css',
   'moby-dick_files/libs/bootstrap/bootstrap-47a9968223acec374271f136b34895d2.min.css',
   'moby-dick_files/libs/bootstrap/bootstrap-4ccf09b2b5e33a5206519ea6126870c7.min.css',
   'moby-dick_files/libs/bootstrap/bootstrap-7137a9d2e5d9345f3f5e52b790beffed.min.css',
   'moby-dick_files/libs/bootstrap/bootstrap-72d4516c01351151e6e0e9cacd361e7a.min.css',
+  'moby-dick_files/libs/bootstrap/bootstrap-87f067e0bced5642c84894ea6748d9c2.min.css',
+  'moby-dick_files/libs/bootstrap/bootstrap-8be7cfb938c99f5d0281e0830d06507c.min.css',
   'moby-dick_files/libs/bootstrap/bootstrap-8dcde3f0ea0ce937eed58b8a19a2dc1c.min.css',
+  'moby-dick_files/libs/bootstrap/bootstrap-94878f9af92381a39331c0a190f30726.min.css',
   'moby-dick_files/libs/bootstrap/bootstrap-973236bd072d72a04ee9cd82dcc9cb29.min.css',
+  'moby-dick_files/libs/bootstrap/bootstrap-b6985619406bde3de95042a31c94e6a5.min.css',
   'moby-dick_files/libs/bootstrap/bootstrap-bd7d1f9729e6e5474f08732b88eac593.min.css',
   'moby-dick_files/libs/bootstrap/bootstrap-f0a251085220e6aae5419f9915541323.min.css',
   'moby-dick_files/libs/bootstrap/bootstrap-icons.css',
