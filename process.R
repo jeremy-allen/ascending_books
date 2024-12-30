@@ -15,18 +15,13 @@ mirror_ca <- "http://mirror.csclub.uwaterloo.ca/gutenberg/"
 #text <- gutenberg_download(2489, mirror = mirror_ca)
 text <- readRDS("data/text.Rds")
 
-my_patterns <- c("Mr\\.", "Ms\\.", "Mrs\\.", "i\\.", "ii\\.", "iii\\.", "St\\.", "ex\\.",
-  "A\\.D\\.", "B\\.C\\.", "Mt\\.", "EX\\.", "ST\\.", "II\\.", "III\\.", "U\\.S\\.",
-  "REV\\.", "V\\.E\\.")
-
-aligned_replacements <- c("Mr_", "Ms_", "Mrs_", "i_", "ii_", "iii_", "St_", "ex_",
-  "A_D_", "B_C_", "Mt_", "EX_", "ST_", "II_", "III_", "U_S_", "REV_", "V_E_")
-
-my_patterns2 <- c("Mr_", "Ms_", "Mrs_", "i_", "ii_", "iii_", "St_", "ex_",
-  "A_D_", "B_C_", "Mt_", "EX_", "ST_", "II_", "III_", "U_S_", "REV_", "V_E_")
-
-aligned_replacements2 <- c("Mr.", "Ms.", "Mrs.", "i.", "ii.", "iii.", "St.", "ex.",
-  "A.D.", "B.C.", "Mt.", "EX.", "ST.", "II.", "III.", "U.S.", "REV.", "V.E.")
+not_sentence_ends <- tibble(
+  with_periods = c("Mr.", "Ms.", "Mrs.", "St.", "ex.", "U.S.", "REV.", "V.E.",
+  "A.D.", "B.C.", "Mt.", "EX.", "ST.", "i.", "ii.", "iii.", "iv.", "v.",
+  "I.", "II.", "III.", "IV.", "V.")
+) |> 
+  mutate(with_underscores = str_replace_all(with_periods, "\\.", "_")) |> 
+  mutate(with_slashes = str_replace_all(with_underscores, "_", "\\\\."))
 
 #---- functions ----
 
@@ -88,13 +83,23 @@ text <- text |>
 
 # replace strings
 text <- text |> 
-  mutate(paras = map_chr(paras, multiple_replacements, patterns = my_patterns, replacements = aligned_replacements))
+  mutate(
+    paras = map_chr(paras,
+      multiple_replacements,
+      patterns = not_sentence_ends$with_slashes,
+      replacements = not_sentence_ends$with_underscores)
+  )
 
 # make each row a sentence
 text <- text |> 
   unnest_sentences(text, paras, to_lower = FALSE) |> 
   # undo the string replacements we did previously
-  mutate(text = map_chr(text, multiple_replacements, patterns = my_patterns2, replacements = aligned_replacements2))
+  mutate(
+    text = map_chr(text,
+      multiple_replacements,
+      patterns = not_sentence_ends$with_underscores,
+      replacements = not_sentence_ends$with_periods)
+  )
 
 # add columns for various sorting
 text <- text |> 
